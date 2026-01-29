@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/iluminacion_circadiana/sw.js', { scope: '/iluminacion_circadiana/' })})}
