@@ -360,6 +360,10 @@ void printStatus() {
   
   bt.print(F("LAT/LON: ")); bt.print(conf.lat); bt.print("/"); bt.println(conf.lon);
   bt.print(F("Timezone: UTC")); bt.println(conf.timezone);
+
+  bt.print(F("maxBri: ")); bt.print(conf.maxBri); bt.print("%");
+  bt.print(F(" | nightBri: ")); bt.print(conf.nightBri); bt.println("%");
+
   
   if (isNightMode) bt.println(F("[MODO NOCHE ACTIVO]"));
   if (isDemoMode) bt.println(F("[MODO DEMO ACTIVO]"));
